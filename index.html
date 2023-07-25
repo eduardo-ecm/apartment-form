@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Aluguél de Apartamentos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Registre seu apartamento para alugar ou vender</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1>Cadastre seu apartamento</h1>
+                <p>Descreva as características e selecione o que vem incluído</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">
+                            Título do anúncio <span class="required-field">*</span>
+                        </label>
+                        <input type="text" name="title" id="title" class="block" placeholder="Um título para divulgar seu apartamento"
+                            minlength="1" maxlength="30" required 
+                        />
+                    </div>
+                    <div class="box-input">
+                        <label for="price">
+                            Valor <span class="required-field">*</span>
+                        </label>
+                        <input type="number" name="price" id="price" class="block" placeholder="Defina o preço do apartamento"
+                            required
+                        />
+                    </div>
+                    <div class="box-input">
+                        <label for="description">
+                            Descrição <span class="required-field">*</span>
+                        </label>
+                        <textarea name="description" id="description" class="block" placeholder="Aqui você coloca os detalhes do apartamento, exemplo: se tem algum defeito"></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="brand">
+                            Marca <span class="required-field">*</span>
+                        </label>
+                        <input type="text" name="brand" id="brand" class="block" placeholder="Digite a marca do apartamento" required />
+                    </div>
+                    <div class="box-input">
+                        <label for="model">
+                            Modelo <span class="required-field">*</span>
+                            <input type="text" name="model" id="model" class="block" placeholder="Digite o modelo do apartamento" required />
+                        </label>
+                    </div>
+                    <div class="box-input">
+                        <label for="mileage">
+                            Ano <span class="required-field">*</span>
+                        </label>
+                        <input type="number" name="mileage" id="mileage" class="block" placeholder="Digite o ano construído do apartamento" 
+                            required
+                        />
+                    </div>
+                    <div class="box-input">
+                        <label for="purchase_date">
+                            Data do último inquilino <span class="required-field">*</span>
+                        </label>
+                        <input type="date" name="purchase_date" id="purchase_date" class="block" />
+                    </div>
+                    <div class="box-input">
+                        <p>Estilo do apartamento: <span class="required-field">*</span></p>
+                        <input type="radio" name="estilo" id="normal" />
+                        <label for="normal">Normal</label>
+                        <input type="radio" name="estilo" id="suite" />
+                        <label for="suite">Suíte</label>
+                    </div>
+                    <div class="optional-box">
+                        <p>Opcionais</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" name="optional[]" id="alarm" value="alarm" />
+                                <label for="alarm">Alarme</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="conditionalair" value="conditionalair" />
+                                <label for="conditionalair">Ar Condicionado</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="solarenergy" value="solarenergy" />
+                                <label for="solarenergy">Energia solar</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="bigtv" value="bigtv" />
+                                <label for="bigtv">Telão</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" name="optional[]" id="frigobar" value="frigobar" />
+                                <label for="frigobar">Frigobar</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="banheira" value="banheira" />
+                                <label for="banheira">Banheira</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="cappucinomachine" value="cappucinomachine" />
+                                <label for="cappucinomachine">Máquina de cappucino</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="wifi" value="wifi" />
+                                <label for="wifi">Wi-fi</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do apartamento:</p>
+                        <input type="file" name="images" id="images" multiple accept="image/png, image/jpg" required />
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #24caba;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+}
+
+p,
+label {
+    color: #444;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #1e1e1e;
+    padding: 10px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 400px;
+    background-color: #cfece1;
+}
+
+textarea {
+    padding: 10px 5px;
+}
+
+/* page header */
+.header {
+    height: 160px;
+    padding: 20px;
+    /* background-color: #589667; */
+    background-image: url('../img/apartamento.jpg');
+    background-size: cover;
+}
+
+.header h3 {
+    color: #fff;
+    margin-top: 0;
+    display: inline;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* form container */
+.form-container {
+    background-color: #cfece1;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+}
+
+/* form-header */
+.form-header {
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+
+.form-header p {
+    color: #589667;
+    border-bottom: 1px solid #589667;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+/* form body */
+.form-body {
+    padding: 30px;
+}
+
+.form-title {
+    margin-bottom: 15px;
+}
+
+.form-body p {
+    margin-bottom: 20px;
+}
+
+.required-field {
+    color: #ec4765;
+}
+
+.box-input {
+    margin-bottom: 35px;
+}
+
+.block {
+    display: block;
+}
+
+.optional-box {
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.optional-list li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.box-input p {
+    margin-bottom: 15px;
+}
+
+.btn-submit {
+    background-color: #589667;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-submit:hover {
+    background-color: #cfece1;
+    border-color: #589667;
+    color: #589667;
+}
